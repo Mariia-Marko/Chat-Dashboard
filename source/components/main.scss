@@ -1,0 +1,13 @@
+@import './config/normalize';
+@import './config/variables';
+@import './config/mixins';
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@import './navbar';
+@import './chats';
+@import './chat';
+@import './config/media';
