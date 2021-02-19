@@ -218,6 +218,35 @@ input {
 }
 
 .navbar .navbar__item {
-  background: url(../img/navbar/home-icon.png) no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar .navbar__link {
+  margin-left: 40px;
+}
+
+.navbar .navbar__item:nth-child(1) {
+  background: url(../img/navbar/home-icon.svg) no-repeat;
+}
+
+.navbar .navbar__item:nth-child(2) {
+  background: url(../img/navbar/chat-icon.svg) no-repeat;
+}
+
+.navbar .navbar__item:nth-child(3) {
+  background: url(../img/navbar/contact-icon.svg) no-repeat;
+}
+
+.navbar .navbar__item:nth-child(4) {
+  background: url(../img/navbar/bell-icon.svg) no-repeat;
+}
+
+.navbar .navbar__item:nth-child(5) {
+  background: url(../img/navbar/calendar-icon.svg) no-repeat;
+}
+
+.navbar .navbar__item:nth-child(6) {
+  background: url(../img/navbar/settings-icon.svg) no-repeat;
 }
 /*# sourceMappingURL=main.css.map */
