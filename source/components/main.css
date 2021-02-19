@@ -128,8 +128,7 @@ input {
 }
 
 .wrapper {
-  height: 100vh;
-  margin: 0 auto;
+  min-height: 100vh;
 }
 
 /* Navigation 
@@ -155,6 +154,7 @@ input {
   -webkit-box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
           box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
   font-family: 'Noto Sans JP', sans-serif;
+  min-height: 100vh;
 }
 
 .navbar__user {
@@ -173,7 +173,7 @@ input {
           flex-direction: column;
   -ms-flex-wrap: none;
       flex-wrap: none;
-  margin: 75px 0 75px 0;
+  margin: 75px 0 50px 0;
 }
 
 .navbar__user .user__img {
@@ -294,5 +294,28 @@ input {
   height: 24px;
   position: absolute;
   background: url(../img/navbar/settings-icon.svg) no-repeat;
+}
+
+.navbar .navbar__button {
+  padding-left: 38px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #707C97;
+  font-weight: 600;
+  border: none;
+  width: 111px;
+}
+
+.navbar .navbar__button:hover {
+  color: darkslategray;
+}
+
+.navbar .navbar__button-icon {
+  background: url(../img/navbar/log-out-icon.svg) no-repeat;
+  height: 24px;
+  margin-left: 40px;
+  margin-top: auto;
+  margin-bottom: 31px;
 }
 /*# sourceMappingURL=main.css.map */

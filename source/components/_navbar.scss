@@ -6,10 +6,11 @@
     background:white;
     box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
     font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100vh;
 
     &__user {
     @include flexiblePlacement(none, center, column, none); 
-    margin: 75px 0 75px 0;  
+    margin: 75px 0 50px 0;  
 
         .user__img {
             border-radius: 50%;
@@ -92,5 +93,28 @@
     .navbar__item:nth-child(6)::after {
         @include navbarPseudoElement;
         background: url(../img/navbar/settings-icon.svg) no-repeat;
+    }
+
+    .navbar__button {
+        padding-left: 38px;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #707C97;
+        font-weight: 600;
+        border: none;
+        width: 111px;
+    }
+
+    .navbar__button:hover {
+        color: darkslategray;
+    }
+
+    .navbar__button-icon {
+        background: url(../img/navbar/log-out-icon.svg) no-repeat;
+        height: 24px;
+        margin-left: 40px; 
+        margin-top: auto;
+        margin-bottom: 31px;
     }
 }
