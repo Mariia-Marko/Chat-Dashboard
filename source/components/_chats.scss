@@ -2,9 +2,7 @@
  =================================================== */
 .chats {
     @include flexiblePlacement(none, none, column, none);
-    width: 580px;
-
-    margin: 109px 80px 0 59px;
+    width: 570px;
 }
 
 .chats__header {
@@ -72,6 +70,8 @@
     border-radius: 6px;
     height: 70px;
     padding-left: 37px;
+    box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
+    
 }
 
 .chats__input {
@@ -106,25 +106,33 @@
     height: 475px;
     overflow-x: hidden;
     margin-bottom: 10px;
+    margin-top: 18px;
 }
 
 .chats__list::-webkit-scrollbar {
     background: #B7BDCB;
-box-shadow: 4px 4px 15px rgba(112, 124, 151, 0.05), 2px 2px 10px rgba(112, 124, 151, 0.1), 1px 1px 50px rgba(112, 124, 151, 0.15);
-border-radius: 10px;
-width: 6px;
-height: 79px;
+    box-shadow: 4px 4px 15px rgba(112, 124, 151, 0.05), 2px 2px 10px rgba(112, 124, 151, 0.1), 1px 1px 50px rgba(112, 124, 151, 0.15);
+    border-radius: 10px;
+    width: 6px;
+    height: 79px;
+}
+
+.chats__list::-webkit-scrollbar-track:hover {
+    background: black;
+    height: 79px;
 }
 
 .chats__item {
-    width: 563px;
+    width: 553px;
     height: 220px;
     border-radius: 6px;
     margin: 20px 0 20px 0;
+    box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
 }
 
 .chats__item:nth-child(1) {
     background: black;
+    margin-top: 0;
 } 
 
 .chats__item:nth-child(2) {

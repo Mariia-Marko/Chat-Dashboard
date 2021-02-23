@@ -9,6 +9,11 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+.main {
+    margin: 40px 15px 0 40px;
+    @include flexiblePlacement(none, none, none, none);
+}
+
 @import './navbar';
 @import './chats';
 @import './chat';
