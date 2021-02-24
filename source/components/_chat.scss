@@ -34,7 +34,7 @@ border-radius: 6px 6px 0px 0px;
     background: white;
 }
 
-.nika__img {
+.user__img {
     width: 54px;
     height: 54px;
     border-radius: 50%;
@@ -42,9 +42,11 @@ border-radius: 6px 6px 0px 0px;
 }
 
 .user__name {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 21px;
     color: #0D1C2E;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .user-info {
@@ -55,7 +57,7 @@ border-radius: 6px 6px 0px 0px;
     font-size: 14px;
     line-height: 19px;
     color: #2A8BF2;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .actions_menu {

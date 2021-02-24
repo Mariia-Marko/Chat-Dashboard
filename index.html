@@ -19,9 +19,9 @@
                 <li class="navbar__item navbar__item-icon navbar__item-hover"><a class="navbar__link" href="#">Home</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#">Chat</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#">Contact</a></li>
-                <li class="navbar__item"><a class="navbar__link"href="#">Notifications</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Notifications</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#">Calendar</a></li>
-                <li class="navbar__item"><a class="navbar__link"href="#">Settings</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Settings</a></li>
             </ul>
             <button class="navbar__button navbar__button-icon">Log out</button>
         </nav>
@@ -35,16 +35,36 @@
                     <button class="dialogs__button">Create new Chat</button>
                 </div>
                 <div class="dialogs__search">
-                    <img class="dialogs__input-img" src="./source/img/chats/search-icon.svg" alt="Search">
+                    <img class="dialogs__input-img" src="./source/img/dialogs/search-icon.svg" alt="Search">
                     <input class="dialogs__input" type="text" placeholder="Search"> 
                     <button class="dialogs__messages">Messages</button>
                 </div>
                 <ul class="dialogs__list">
+                    <li class="dialogs__item">
+                        <div class="dialogs__item-header">
+                            <img class="user__img" src="./source/img/dialogs/Luy Robin-photo.svg" alt="Luy Robin">
+                            <div class="user-info">
+                                <a class="user__name" href="#">Luy Robin</a>
+                                <span class="user_online">writes</span>
+                            </div> 
+                            <time>1 minute ago</time>
+                        </div>
+                        <div class="dialogs__item-content">
+                            <span class="dialogs--text-preview">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</span> 
+                            <div class="dialogs--unread"></div>
+                        </div>
+                    </li>
                     <li class="dialogs__item"></li>
-                    <li class="dialogs__item"></li>
-                    <li class="dialogs__item"></li>
-                    <li class="dialogs__item"></li>
-                    <li class="dialogs__item"></li>
+                    <li class="dialogs__item">
+                        <div class="dialogs__item-header">
+                            <img class="user__img" src="./source/img/chat/Nika-Jerrardo-photo.svg" alt="Nika Jerrardo">
+                            <div class="user-info">
+                                <a class="user__name" href="#">Nika Jerrardo</a>
+                                <span class="user_online">last online 5 hours ago</span>
+                            </div> 
+                            <time>1 minute ago</time>
+                        </div>
+                    </li>
                     <li class="dialogs__item"></li>
                     <li class="dialogs__item"></li>
                 </ul>
@@ -52,7 +72,7 @@
 
             <section class="chat">
                 <div class="chat__header">
-                    <img class="nika__img" src="./source/img/chat/Nika-Jerrardo-photo.svg" alt="Nika Jerrardo">
+                    <img class="user__img" src="./source/img/chat/Nika-Jerrardo-photo.svg" alt="Nika Jerrardo">
                     <div class="user-info">
                         <a class="user__name" href="#">Nika Jerrardo</a>
                         <span class="user_online">last online 5 hours ago</span>
