@@ -103,7 +103,7 @@
 
 .dialogs__list {
     overflow: scroll;
-    height: 475px;
+    height: 525px;
     overflow-x: hidden;
     margin-bottom: 10px;
     margin-top: 18px;
@@ -134,7 +134,7 @@
     @include flexiblePlacement(none, center, none, none);
 }
 
-time {
+.time {
     font-size: 15px;
     line-height: 19px;
     color: #707C97;
@@ -186,19 +186,34 @@ time {
     background: linear-gradient(96.78deg, #7CB8F7 0%, #2A8BF2 100%);
 }
 
+.user_online-active,
+.time-active {
+    color: #FFFFFF;
+}
+
+.user_online-active {
+    font-weight: 300;
+}
+
+.text-active-color {
+    color: #FFFFFF;
+}
+
+.time-active {
+    margin-left: 169px;
+    font-weight: 300;
+    margin-top: 6px;
+}
+
 .dialogs__item:nth-child(4) {
     background: #FFFFFF;
 }
 
-.dialogs__item:nth-child(5) {
-    background: green;
+.time-david {
+    margin-left: 202px;
 }
 
-.dialogs__item:nth-child(6) {
-    background: gold;
-} 
-
-.dialogs__item:nth-child(7) {
-    background: lightcoral;
-    margin-bottom: 0;
-} 
+.time-jared {
+    margin-left: 181px;
+}
+ 
