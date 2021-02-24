@@ -1,15 +1,15 @@
 /* Chats
  =================================================== */
-.chats {
+.dialogs {
     @include flexiblePlacement(none, none, column, none);
     width: 570px;
 }
 
-.chats__header {
+.dialogs__header {
     @include flexiblePlacement(space-between, none, none, none);
 }
 
-.chats__title {
+.dialogs__title {
     font-size: 36px;
     line-height: 26px;
     font-weight: 400;
@@ -18,14 +18,14 @@
     margin-bottom: 15px;
 }
 
-.chats__link {
+.dialogs__link {
     position: relative;
     font-size: 18px;
     line-height: 26px;
     color: #707C97;
 }
 
-.chats__link::after {
+.dialogs__link::after {
     content: '';
     position: absolute;
     background: url(../img/chats/arrow-icon.png) no-repeat;
@@ -35,7 +35,7 @@
     top: 12px;
 }
 
-.chats__button {
+.dialogs__button {
     width: 240px;
     height: 60px;   
     background: linear-gradient(92.68deg, #7CB8F7 0%, #2A8BF2 100%);
@@ -50,7 +50,7 @@
     padding-left: 35px;
 }
 
-.chats__button::before {
+.dialogs__button::before {
     content: '';
     position: absolute;
     width: 24px;
@@ -60,7 +60,7 @@
     background: url(../img/chats/plus-icon.svg) no-repeat;
 }
 
-.chats__search {
+.dialogs__search {
     @include flexiblePlacement(none, none, none, none);  
     margin-top: 24px;  
     color: #707C97;
@@ -74,7 +74,7 @@
     
 }
 
-.chats__input {
+.dialogs__input {
     position: relative;
     font-size: 18px;
     width: 376px;
@@ -83,7 +83,7 @@
     padding: 22px 0 22px 10px;
 }
 
-.chats__messages {
+.dialogs__messages {
     @include flexiblePlacement(center, center, none, none);
     width: 200px;
     color: #707C97;
@@ -95,13 +95,13 @@
     border-left: 2px solid #F5F4FB;
 }
 
-.chats__input-img {
+.dialogs__input-img {
     width: 24px;
     height: 24px;
     margin-top: 24px;
 }
 
-.chats__list {
+.dialogs__list {
     overflow: scroll;
     height: 475px;
     overflow-x: hidden;
@@ -109,7 +109,7 @@
     margin-top: 18px;
 }
 
-.chats__list::-webkit-scrollbar {
+.dialogs__list::-webkit-scrollbar {
     background: #B7BDCB;
     box-shadow: 4px 4px 15px rgba(112, 124, 151, 0.05), 2px 2px 10px rgba(112, 124, 151, 0.1), 1px 1px 50px rgba(112, 124, 151, 0.15);
     border-radius: 10px;
@@ -117,12 +117,12 @@
     height: 79px;
 }
 
-.chats__list::-webkit-scrollbar-track:hover {
+.dialogs__list::-webkit-scrollbar-track:hover {
     background: black;
     height: 79px;
 }
 
-.chats__item {
+.dialogs__item {
     width: 553px;
     height: 220px;
     border-radius: 6px;
@@ -130,32 +130,32 @@
     box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
 }
 
-.chats__item:nth-child(1) {
+.dialogs__item:nth-child(1) {
     background: black;
     margin-top: 0;
 } 
 
-.chats__item:nth-child(2) {
+.dialogs__item:nth-child(2) {
     background: chartreuse;
 }
 
-.chats__item:nth-child(3) {
+.dialogs__item:nth-child(3) {
     background: coral;
 }
 
-.chats__item:nth-child(4) {
+.dialogs__item:nth-child(4) {
     background: gray;
 }
 
-.chats__item:nth-child(5) {
+.dialogs__item:nth-child(5) {
     background: green;
 }
 
-.chats__item:nth-child(6) {
+.dialogs__item:nth-child(6) {
     background: gold;
 } 
 
-.chats__item:nth-child(7) {
+.dialogs__item:nth-child(7) {
     background: lightcoral;
     margin-bottom: 0;
 } 

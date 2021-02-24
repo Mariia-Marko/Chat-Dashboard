@@ -8,6 +8,8 @@
     width: 595px;
     margin-bottom: 2px;
     @include flexiblePlacement(none, center, none, none);
+    background: #FAFBFF;
+border-radius: 6px 6px 0px 0px;
 }
 
 .chat__content {
