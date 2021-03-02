@@ -803,7 +803,7 @@ input {
   background: white;
   -webkit-box-shadow: 25px 25px 25px rgba(86, 128, 248, 0.03), 35.0877px 25px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
           box-shadow: 25px 25px 25px rgba(86, 128, 248, 0.03), 35.0877px 25px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
-  padding: 32px 0 0 30px;
+  padding: 32px 60px 0 30px;
 }
 
 .user__img {
@@ -917,8 +917,8 @@ input {
   line-height: 26px;
   text-align: center;
   width: 73px;
-  bottom: -24px;
-  right: -3px;
+  top: 67px;
+  right: 14px;
 }
 
 .chat__content_mess-left {
@@ -937,15 +937,52 @@ input {
           flex-direction: none;
   -ms-flex-wrap: none;
       flex-wrap: none;
-  background: #FFFFFF;
-  border: 1px solid rgba(112, 124, 151, 0.25);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.05), 15px 15px 35px rgba(112, 124, 151, 0.05);
-          box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.05), 15px 15px 35px rgba(112, 124, 151, 0.05);
+  margin-top: 30px;
+  position: relative;
+}
+
+.chat__content_mess-left::after {
+  content: '';
+  position: absolute;
+  background: url(../img/chat/two-check-marks.svg) no-repeat;
+  width: 15px;
+  height: 15px;
+  top: 17px;
+  right: -25px;
 }
 
 .chat__content_mess-left_text {
-  width: 195px;
+  width: 220px;
+  background: #FFFFFF;
+  border: 1px solid rgba(112, 124, 151, 0.25);
+  padding: 14px 22px 17px 21px;
+  color: #707C97;
+  border-radius: 10px 10px 0px 10px;
+  -webkit-box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.05), 15px 15px 35px rgba(112, 124, 151, 0.05);
+          box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.05), 15px 15px 35px rgba(112, 124, 151, 0.05);
+  position: relative;
+}
+
+.chat__content_mess-left_text::before {
+  content: '';
+  position: absolute;
+  background: url(../img/chat/more-horizontal-icon.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+  left: -43px;
+}
+
+.chat__content_mess-left_text::after {
+  content: '4 days ago';
+  position: absolute;
+  color: rgba(112, 124, 151, 0.7);
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  width: 73px;
+  top: 51px;
+  right: 14px;
 }
 /*# sourceMappingURL=main.css.map */
