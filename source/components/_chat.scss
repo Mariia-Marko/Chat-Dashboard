@@ -60,12 +60,34 @@
     font-weight: 300;
 }
 
-.actions_menu {
-    background: url(../img/chat/more-icon.svg);
-    width: 25px;
-    height: 25px;
-    padding: 10px;
+.actions_icons_menu {
+    @include flexiblePlacement(none, none, none, none);
+    margin-left: 220px;
+}
 
+.actions_menu {
+    width: 52px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03), 0px 7px 25px rgba(42, 139, 242, 0.03), 0px 5px 25px rgba(42, 139, 242, 0.07);
+    @include flexiblePlacement(center,center, none, none);
+    margin-right: 20px;
+}
+
+.item_more_label {
+    background: url(../img/chat/more-icon.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    border: none
+}
+
+.actions_menu-btn {
+    background: url(../img/chat/more-horizontal-icon.svg) no-repeat;
+    transform: rotate(90deg);
+    width: 24px;
+    height: 24px;
+    border: none
 }
 
 .chat__content_mess-right {
