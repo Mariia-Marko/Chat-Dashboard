@@ -95,15 +95,14 @@
     }
 
     &__button {
+        margin: auto 0 51px 40px;        
         padding-left: 38px;
         width: 111px;
         height: 24px;
-        margin-left: 40px;
-        margin-bottom: 51px;
+
         font-size: 16px;
         text-transform: uppercase;
         color: $caparol;
-        margin-top: auto;
         font-weight: 600;
         border: none;
         background: url(../img/side-bar/log-out-icon.svg) no-repeat;

@@ -174,44 +174,12 @@ input {
 }
 
 .burger {
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  display: none;
-  height: 3px;
-  width: 18px;
-  border-radius: 10px;
-  background: #707C97;
+  width: 30px;
+  height: 30px;
+  background: url(../img/burger-menu.png) no-repeat;
   cursor: pointer;
-}
-
-.burger::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  height: 3px;
-  width: 21px;
-  background: #707C97;
-  border-radius: 10px;
-}
-
-.burger::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  height: 3px;
-  width: 21px;
-  border-radius: 10px;
-  background: #707C97;
-}
-
-.burger-circle {
-  background: linear-gradient(92.68deg, #7CB8F7 0%, #2A8BF2 100%);
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  margin-left: 19px;
-  margin-top: -2px;
+  display: none;
+  margin: 0 0 0 0;
 }
 
 /* Navigation 
@@ -392,15 +360,13 @@ input {
 }
 
 .side-bar__button {
+  margin: auto 0 51px 40px;
   padding-left: 38px;
   width: 111px;
   height: 24px;
-  margin-left: 40px;
-  margin-bottom: 51px;
   font-size: 16px;
   text-transform: uppercase;
   color: #707C97;
-  margin-top: auto;
   font-weight: 600;
   border: none;
   background: url(../img/side-bar/log-out-icon.svg) no-repeat;
@@ -1347,6 +1313,9 @@ input {
   }
   .burger {
     display: block;
+  }
+  .main {
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
