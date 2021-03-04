@@ -2,22 +2,65 @@
 @import './config/variables';
 @import './config/mixins';
 
-@font-face {
-    font-family: 'TT Norms';
-    src: url(../font/TTNorms-Medium.woff) format('woff');
-    font-weight: 400;
-}
-  
 .wrapper {
-    min-height: 100vh;
+    
     background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
     @include flexiblePlacement(none, none, none, none);
     font-family: 'TT Norms';
 }
 
+@font-face {
+    font-family: 'TT Norms';
+    src: url(../font/TTNorms-Medium.woff) format('woff');
+    font-weight: 400;
+}
+
 .main {
     margin: 40px 15px 0 40px;
     @include flexiblePlacement(none, none, none, none);
+}
+
+.burger {
+    position: absolute;
+    left: 10px;    
+    top: 15px; 
+    
+    display: none;    
+    height: 3px;
+    width: 18px;    
+    border-radius: 10px;
+    background: #707C97;
+    cursor: pointer;
+}
+
+.burger::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    height: 3px;
+    width: 21px;
+    background: #707C97;
+    border-radius: 10px;
+}
+
+.burger::after {
+    content: '';
+    position: absolute;
+    top: 5px;    
+
+    height: 3px;
+    width: 21px;    
+    border-radius: 10px;
+    background: #707C97;
+}
+
+.burger-circle {
+    background: linear-gradient(92.68deg, #7CB8F7 0%, #2A8BF2 100%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 19px;
+    margin-top: -2px;
 }
 
 @import './side-bar';

@@ -1,13 +1,13 @@
 /* Navigation 
  =================================================== */
 
- .side-bar {
+.side-bar {
     @include flexiblePlacement(none, none, column, none);
-    min-height: 100vh;
     width: 250px;
-    background:white;
-    box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
- 
+    background: $whiteColor;
+    box-shadow: $sideBarShadow;
+    min-height: 100vh;
+
     .profile-link {
     @include flexiblePlacement(none, center, column, none); 
     margin: 75px 0 50px 0;  
@@ -25,18 +25,16 @@
         }
 
         &__arrow {
+            margin: 5px 0 0 9px;
             width: 14px;
             height: 8px;
             background: url(../img/side-bar/arrow-icon.png) no-repeat;
-            margin: 5px 0 0 9px;
         }
 
         &__name {
-            position: relative;
             font-size: 18px;
-            line-height: 21px;
-            color: #0D1C2E;
-            font-weight: 500;
+            color: $darkBlueColor;
+            font-weight: 400;
         }
     }
 
@@ -47,24 +45,6 @@
         height: 40px;
         margin-bottom: 20px;
         padding-left: 38px;
-    }
-
-    &__item:hover {
-        border-left: 4px solid #2A8BF2;
-        border-radius: 5%;
-    }
-
-    &__link {
-        margin-left: 40px; 
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-        color: #707C97;
-        font-weight: 600;
-    }
-
-    &__link:hover {
-        color: #2A8BF2;
     }
 
     &__item:nth-child(1)::after {
@@ -97,68 +77,39 @@
         background: url(../img/side-bar/settings-icon.svg) no-repeat;
     }
 
+    &__item:hover {
+        border-left: 4px solid $dodgerblueColor;
+        border-radius: 5%;
+    }
+
+    &__link {
+        margin-left: 40px; 
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $caparol;
+        font-weight: 600;
+    }
+
+    &__link:hover {
+        color: $dodgerblueColor;
+    }
+
     &__button {
         padding-left: 38px;
+        width: 111px;
+        height: 24px;
+        margin-left: 40px;
+        margin-bottom: 51px;
         font-size: 16px;
-        line-height: 19px;
         text-transform: uppercase;
-        color: #707C97;
+        color: $caparol;
+        margin-top: auto;
         font-weight: 600;
         border: none;
-        width: 111px;
+        background: url(../img/side-bar/log-out-icon.svg) no-repeat;
     }
 
     &__button:hover {
         color: darkslategray;
     }
-
-    &__button-icon {
-        background: url(../img/side-bar/log-out-icon.svg) no-repeat;
-        height: 24px;
-        margin-left: 40px; 
-        margin-top: auto;
-        margin-bottom: 31px;
-    }
-
-    .burger {
-        position: relative;
-        left: 10px;    
-        top: 15px; 
-        
-        display: none;    
-        height: 3px;
-        width: 18px;    
-        border-radius: 10px;
-        background: #707C97;
-        cursor: pointer;
-    }
-    
-    .burger::before {
-        content: '';
-        position: absolute;
-        top: 10px;
-        height: 3px;
-        width: 21px;
-        background: #707C97;
-        border-radius: 10px;
-    }
-    
-    .burger::after {
-        content: '';
-        position: absolute;
-        top: 5px;    
-    
-        height: 3px;
-        width: 21px;    
-        border-radius: 10px;
-        background: #707C97;
-    }
-    .burger-circle {
-        background: linear-gradient(92.68deg, #7CB8F7 0%, #2A8BF2 100%);
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        margin-left: 19px;
-        margin-top: -2px;
-    }
- }
+}
