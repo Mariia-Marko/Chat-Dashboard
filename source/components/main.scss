@@ -5,10 +5,10 @@
 
 @font-face {
     font-family: 'TT Norms';
-    src: url(../fonts/TTNorms-Medium.woff) format('woff');
-    font-weight: 500;
+    src: url(../font/TTNorms-Medium.woff) format('woff');
+    font-weight: 400;
   }
-
+  
 .wrapper {
     min-height: 100vh;
     background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
