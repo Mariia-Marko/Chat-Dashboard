@@ -176,7 +176,7 @@ input {
 
 /* Navigation 
  =================================================== */
-.navbar {
+.side-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,7 +199,7 @@ input {
           box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
 }
 
-.navbar__user {
+.side-bar .profile-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,36 +215,51 @@ input {
           flex-direction: column;
   -ms-flex-wrap: none;
       flex-wrap: none;
-  margin: 75px 15px 50px 0;
+  margin: 75px 0 50px 0;
+  cursor: pointer;
 }
 
-.navbar__user .user__img {
+.side-bar .profile-link__img {
   border-radius: 50%;
   margin-bottom: 15px;
   width: 86px;
   height: 86px;
 }
 
-.navbar__user .user__link {
+.side-bar .profile-link__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+}
+
+.side-bar .profile-link__arrow {
+  width: 14px;
+  height: 8px;
+  background: url(../img/side-bar/arrow-icon.png) no-repeat;
+  margin: 5px 0 0 9px;
+}
+
+.side-bar .profile-link__name {
   position: relative;
   font-size: 18px;
   line-height: 21px;
   color: #0D1C2E;
-  font-weight: 600;
-  font-family: 'TT Norms';
+  font-weight: 500;
 }
 
-.navbar__user .user__link::after {
-  content: '';
-  position: absolute;
-  background: url(../img/navbar/arrow-icon.png) no-repeat;
-  width: 14px;
-  height: 8px;
-  top: 9px;
-  right: -20px;
-}
-
-.navbar .navbar__item {
+.side-bar__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,14 +282,12 @@ input {
   padding-left: 38px;
 }
 
-.navbar .navbar__item:hover {
+.side-bar__item:hover {
   border-left: 4px solid #2A8BF2;
-  -webkit-box-shadow: inset;
-          box-shadow: inset;
   border-radius: 5%;
 }
 
-.navbar .navbar__link {
+.side-bar__link {
   margin-left: 40px;
   font-size: 16px;
   line-height: 19px;
@@ -283,65 +296,65 @@ input {
   font-weight: 600;
 }
 
-.navbar .navbar__link:hover {
+.side-bar__link:hover {
   color: #2A8BF2;
 }
 
-.navbar .navbar__item-icon:nth-child(1)::after {
+.side-bar__item:nth-child(1)::after {
   content: '';
   width: 24px;
   bottom: 7px;
   height: 24px;
   position: absolute;
-  background: url(../img/navbar/home-icon.svg) no-repeat;
+  background: url(../img/side-bar/home-icon.svg) no-repeat;
 }
 
-.navbar .navbar__item:nth-child(2)::after {
+.side-bar__item:nth-child(2)::after {
   content: '';
   width: 24px;
   bottom: 7px;
   height: 24px;
   position: absolute;
-  background: url(../img/navbar/chat-icon.svg) no-repeat;
+  background: url(../img/side-bar/chat-icon.svg) no-repeat;
 }
 
-.navbar .navbar__item:nth-child(3)::after {
+.side-bar__item:nth-child(3)::after {
   content: '';
   width: 24px;
   bottom: 7px;
   height: 24px;
   position: absolute;
-  background: url(../img/navbar/contact-icon.svg) no-repeat;
+  background: url(../img/side-bar/contact-icon.svg) no-repeat;
 }
 
-.navbar .navbar__item:nth-child(4)::after {
+.side-bar__item:nth-child(4)::after {
   content: '';
   width: 24px;
   bottom: 7px;
   height: 24px;
   position: absolute;
-  background: url(../img/navbar/bell-icon.svg) no-repeat;
+  background: url(../img/side-bar/bell-icon.svg) no-repeat;
 }
 
-.navbar .navbar__item:nth-child(5)::after {
+.side-bar__item:nth-child(5)::after {
   content: '';
   width: 24px;
   bottom: 7px;
   height: 24px;
   position: absolute;
-  background: url(../img/navbar/calendar-icon.svg) no-repeat;
+  background: url(../img/side-bar/calendar-icon.svg) no-repeat;
 }
 
-.navbar .navbar__item:nth-child(6)::after {
+.side-bar__item:nth-child(6)::after {
   content: '';
   width: 24px;
   bottom: 7px;
   height: 24px;
   position: absolute;
-  background: url(../img/navbar/settings-icon.svg) no-repeat;
+  background: url(../img/side-bar/settings-icon.svg) no-repeat;
 }
 
-.navbar .navbar__button {
+.side-bar__button {
   padding-left: 38px;
   font-size: 16px;
   line-height: 19px;
@@ -352,16 +365,57 @@ input {
   width: 111px;
 }
 
-.navbar .navbar__button:hover {
+.side-bar__button:hover {
   color: darkslategray;
 }
 
-.navbar .navbar__button-icon {
-  background: url(../img/navbar/log-out-icon.svg) no-repeat;
+.side-bar__button-icon {
+  background: url(../img/side-bar/log-out-icon.svg) no-repeat;
   height: 24px;
   margin-left: 40px;
   margin-top: auto;
   margin-bottom: 31px;
+}
+
+.side-bar .burger {
+  position: relative;
+  left: 10px;
+  top: 15px;
+  display: none;
+  height: 3px;
+  width: 18px;
+  border-radius: 10px;
+  background: #707C97;
+  cursor: pointer;
+}
+
+.side-bar .burger::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  height: 3px;
+  width: 21px;
+  background: #707C97;
+  border-radius: 10px;
+}
+
+.side-bar .burger::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  height: 3px;
+  width: 21px;
+  border-radius: 10px;
+  background: #707C97;
+}
+
+.side-bar .burger-circle {
+  background: linear-gradient(92.68deg, #7CB8F7 0%, #2A8BF2 100%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: 19px;
+  margin-top: -2px;
 }
 
 /* Dialogs
@@ -1293,5 +1347,14 @@ input {
   height: 20px;
   background: url(../img/chat/btn-send-icon.svg) no-repeat;
   border: none;
+}
+
+@media (max-width: 1300px) {
+  .burger {
+    display: block;
+  }
+  .side-bar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

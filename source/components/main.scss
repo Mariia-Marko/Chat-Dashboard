@@ -2,12 +2,11 @@
 @import './config/variables';
 @import './config/mixins';
 
-
 @font-face {
     font-family: 'TT Norms';
     src: url(../font/TTNorms-Medium.woff) format('woff');
     font-weight: 400;
-  }
+}
   
 .wrapper {
     min-height: 100vh;
@@ -21,7 +20,7 @@
     @include flexiblePlacement(none, none, none, none);
 }
 
-@import './navbar';
+@import './side-bar';
 @import './dialogs';
 @import './chat';
 @import './config/media';
