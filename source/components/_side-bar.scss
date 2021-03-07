@@ -1,6 +1,5 @@
 /* Navigation 
  =================================================== */
-
 .side-bar {
     @include flexiblePlacement(none, none, column, none);
     width: 250px;
